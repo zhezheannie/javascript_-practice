@@ -1,4 +1,3 @@
-# anime js
 ![](01.png)
 
 [JavaScript 入門篇 - 學徒的試煉](https://www.udemy.com/course/javascript-learning/)
