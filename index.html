@@ -4,30 +4,86 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <p>---------------------------- 變數 ----------------------------</p>
-        <ul>
-            <li><a href="#title1">標題1</a></li>
-            <li><a href="#title2">標題2</a></li>
-            <li><a href="#title3">標題3</a></li>
-        </ul>
-        <h1 id="title1">標題一</h1>
-        <p>內容文字內容文字內容文字內容文字</p>
-        <h1 id="title2">標題二</h1>
-        <p>內容文字內容文字內容文字內容文字</p>
-        <h1 id="title3">標題三</h1>
-        <p>內容文字內容文字內容文字內容文字</p>
+        <p style="color: red; font-weight: bold; font-size: 20px;">《變數》</p>
+        <hr style="width: 600px; display: inline-block;">
+
+        <h3 id="title1">標題一</h3>
+        <p style="font-size: 14px; color: #aaa;">document.getElementById('title1').textContent = '修改後的標題';</p>
+        <h3 id="title2">標題二</h3>
+        <h3 id="title3">標題三</h3>
+
+
+
+        <hr style="width: 600px; display: inline-block;">
         <p id="gogo"></p>
         <p id="hihi"></p>
         <p id="lala"></p>
+        <p style="font-size: 14px; color: #aaa;">
+                var AAA = 200;<br>
+                var BBB = AAA * 3;<br>
+                var CCC = "輸入文字，雙引號也可以:) " + BBB;<br>
+                var DDD = 888;<br><br>
+                
+                document.getElementById('gogo').textContent = AAA;<br>
+                document.getElementById('hihi').textContent = BBB;<br>
+                document.getElementById('lala').textContent = CCC;<br><br>
+
+                console.log(DDD)
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+
+
         <p>一個紅豆餅<span id="cookiePrice"></span>元</p>
         <p>我有<span id="myMoney">元</span>還差<span id="total"></span>元</p>
         <p>五個紅豆餅是<span id="five"></span>元</p>
+        <p style="font-size: 14px; color: #aaa;">
+                var cookiePrice = 35;<br>
+                var myMoney = 15;<br>
+                var total = cookiePrice - myMoney;<br><br>
+
+                document.getElementById('cookiePrice').textContent = cookiePrice;<br>
+                document.getElementById('myMoney').textContent = myMoney;<br>
+                document.getElementById('total').textContent = total;<br>
+                document.getElementById('five').textContent = cookiePrice * 5;<br><br>
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《函式》</p>
         <p>服務生：<span id="greetId"></span></p>
         <p>顧客：8個漢堡1個薯條</p>
         <p>服務生：總計<span id="totalId"></span>元</p>
-        <p>---------------------------- 函式 ----------------------------</p>
+        <p style="font-size: 14px; color: #aaa;">     
+                function greet(){<br>
+                    var greetNote = '您好，歡迎光臨';<br>
+                    document.getElementById('greetId').textContent = greetNote;<br>
+                    // alert('安安安安安安')<br>
+                }<br>
+                greet();<br><br>
+
+                function order(hamNum,cokeNum){<br>
+                    var total = (hamNum * 50) + (cokeNum * 20);<br>
+                    document.getElementById('totalId').textContent = total;<br>
+                }<br>
+                order(8,1);<br>
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+
+
         <p>我要 <input type="text" id="hamNumId"> 個漢堡(50元)、 <input type="text" id="cokeNumId"> 杯可樂(20元)。</p>
         <p><input type="button" id="countId" value="計算"></p>總共是<span id="totalMcId"></span>元
+        <p style="font-size: 14px; color: #aaa;">
+                document.getElementById('countId').onclick = function(){<br>
+                    var hamPrice = 50;<br>
+                    var cokePrice = 20;<br>
+                    var hamNum = parseInt(document.getElementById('hamNumId').value)*hamPrice;<br>
+                    var cokeNum = parseInt(document.getElementById('cokeNumId').value)*cokePrice;<br>
+                    document.getElementById('totalMcId').textContent = hamNum + cokeNum<br>
+                }<br>
+        </p>
+        
         <script src="all.js"></script>
     </body>
 </html>
