@@ -7,8 +7,6 @@
 [練習連結](https://zhezheannie.github.io/javascript_practice/index.html)
 
 
-
-
 ### 函數練習(1)建立函數
 ![](02.png)
 
@@ -18,5 +16,8 @@
 ### 函數練習(3)建立與呼叫函數
 ![](04.png)
 
-### 函數練習(4)
+### 函數練習(4)Part1
 ![](05.png)
+
+### 函數練習(4)Part2
+![](06.png)
