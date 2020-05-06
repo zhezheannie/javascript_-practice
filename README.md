@@ -6,8 +6,8 @@
 
 
 
-## [第一週練習](https://zhezheannie.github.io/javascript_practice/week1.html)  javascript基礎、變數、函式
+## [第一週練習](https://zhezheannie.github.io/javascript_practice/week1.html) javascript基礎、變數
 
-## [第二週練習](https://zhezheannie.github.io/javascript_practice/week2.html) 函式考題
+## [第二週練習](https://zhezheannie.github.io/javascript_practice/week2.html) 函式、函式考題
 
-## [第三週練習](https://zhezheannie.github.io/javascript_practice/week3.html)
+## [第三週練習](https://zhezheannie.github.io/javascript_practice/week3.html) 陣列與物件
