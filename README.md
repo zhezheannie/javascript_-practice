@@ -7,7 +7,10 @@
 
 
 ## [第一週練習](https://zhezheannie.github.io/javascript_practice/week1.html) javascript基礎、變數
+![](week1.png)
 
 ## [第二週練習](https://zhezheannie.github.io/javascript_practice/week2.html) 函式、函式考題
+![](week2.png)
 
 ## [第三週練習](https://zhezheannie.github.io/javascript_practice/week3.html) 陣列與物件
+![](week3.png)
