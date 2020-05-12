@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p style="color: red; font-weight: bold; font-size: 20px;">《陣列》</p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var cornField1 = 8;<br>
+            var cornField2 = 5;<br>
+            var cornField3 = 6;<br><br>
+
+            var cornField = [8,5,6];<br><br>
+
+            console.log(cornField[0]);<br><br>
+
+            // push<br><br>
+
+            var cornField4 = [];<br>
+            cornField4.push(5);<br>
+            cornField4.push(8);<br>
+            cornField4.push(6);<br><br>
+
+            cornField4[0] = 10;<br><br>
+
+            console.log(cornField4);<br><br>
+
+            //length<br><br>
+
+            console.log('我總共有' + cornField4.length + '個玉米田')
+        </p>
+
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《物件》</p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var farm = {<br>
+                farmer:'卡斯伯',<br>
+                chick: 15,<br>
+                dog: ['張姆士','龐的'],<br>
+            };<br><br>
+            
+            //farm.chick = 15;<br>
+            var dog1 = farm.dog[0]<br><br>
+            
+            console.log('我的農場裡的第一隻狗叫' + farm.dog[0]);<br><br>
+            
+            var house = {<br>
+                room:3,<br>
+                father:'Tom',<br>
+                son:['Jhon','Bob'],<br>
+                mom:'Mary',<br>
+            }<br><br>
+            
+            console.log('第二個兒子名字是' + house.son[1]);<br>
+            }
+        </p>
+        
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《物件+function》</p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var farm = {<br>
+                farmer:'卡斯伯',<br>
+                chick: 15,<br>
+                duck:3,<br>
+                dog: ['張姆士','龐的'],<br>
+                goDinner: function(){<br>
+                    console.log(farm.farmer + '該回家吃晚飯');<br>
+                },<br>
+                poultryTotal: function(){<br>
+                    var num = farm.chick + farm.duck;<br>
+                    console.log('我的農場總共有' + num + '家禽');<br>
+                }<br>
+            };<br><br>
+            
+            farm.poultryTotal();
+        </p>
+        
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《物件+陣列》</p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var farms = [<br>
+            {<br>
+                farmer:'卡斯伯',<br>
+                chick: 15,<br>
+                duck: 3,<br>
+                dogs: ['張姆士','龐的'],<br>
+                broccoliField: [6, 6, 6, 6],<br>
+                scarecrow: 9,<br>
+            },<br>
+            {<br>
+                farmer:'查理',<br>
+                dogs: ['皮皮'],<br>
+                chick: 30,<br>
+                cornField: [18, 12],<br>
+                broccoliField: [8, 8, 8],<br>
+                scarecrow: 6,<br>
+            },<br>
+        ];<br><br>
+
+        console.log(farms[1].farmer);
+        </p>
+        
+        <hr style="width: 600px; display: inline-block;">
+
+        <img src="img/week3/01.png">
+        <img src="img/week3/02.png">
+        <img src="img/week3/03.png">
+        <img src="img/week3/04.png">
+        <img src="img/week3/05.png">
+        <img src="img/week3/06.png">
+        <script src="js/week3.js"></script>
+    </body>
+</html>
