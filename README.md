@@ -14,3 +14,6 @@
 
 ## [第三週練習](https://zhezheannie.github.io/javascript_practice/week3.html) 陣列與物件
 ![](img/week3.png)
+
+## [第四週練習](https://zhezheannie.github.io/javascript_practice/week4.html) 控制判斷(運算子、if、switch)
+![](img/week4.png)
