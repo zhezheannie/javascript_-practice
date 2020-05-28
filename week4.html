@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p style="color: red; font-weight: bold; font-size: 20px;">《比較運算子：==、!==，程式碼範例》</p>
+        <p>服務生：Hello，請問您是本日壽星嗎？</p>
+        <p>顧客：<span id="birthdayId"></span></p>
+        <p>服務生：請問人還沒到齊對嗎？看預約名單您是預定兩個位置。</p>
+        <p>顧客：<span id="peopleId"></span></p>
+
+        <p style="font-size: 14px; color: #aaa;">
+                var myMonth = 5;<br>
+                var thisMonth = 12;<br><br>
+                
+                var birthdayCheck = myMonth == thisMonth;<br><br>
+                
+                document.getElementById('birthdayId').textContent = birthdayCheck;<br><br>
+                
+                var nowPeople = 1;<br>
+                var totalPeople = 2;<br><br>
+                
+                var allPeople = totalPeople !== nowPeople;<br><br>
+                
+                document.getElementById('peopleId').textContent = allPeople;
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《比較運算子：嚴謹模式 ===》</p>
+        <img src="img/week4/002.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《比較運算子： ＞、＜》</p>
+        <img src="img/week4/001.png"><br>
+        <img src="img/week4/003.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《邏輯運算子： &&、||、!》</p>
+        <img src="img/week4/004.png"><br>
+        <img src="img/week4/005.png"><br>
+        <img src="img/week4/006.png"><br>
+        <img src="img/week4/007.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《邏輯運算子：範例程式碼》</p>
+        <p>服務生：請問您是 VIP 嗎？帳單有滿千嗎？兩者達到可以送贈品喔！</p>
+        <p>顧客：<span id="andId"></span></p>
+        <p>服務生：抱歉我記錯了，只要一個有達到就送贈品，您有嗎？</p>
+        <p>顧客：<span id="orId"></span></p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var myBill = 1250;<br>
+            var VIP = false;<br>
+            var andCheck = myBill > 1000 && VIP == true;<br>
+            var orCheck = myBill > 1000 || VIP == true;<br><br>
+
+            document.getElementById('andId').textContent = andCheck;<br>
+            document.getElementById('orId').textContent = orCheck;<br>
+        </p>
+
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《if - 程式碼教學》</p>
+        
+        <p style="font-size: 14px; color: #aaa;">
+            var hungry = '飽足';<br><br>
+
+            if(hungry == '飢餓'){<br>
+                console.log('我現在好餓');<br>
+            }else{<br>
+                console.log('我現在一點都不想吃東西');<br>
+                console.log('我們走吧');<br>
+            }
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《else if - 程式碼教學》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var hungry = 9; //飢餓程度 1~10<br><br>
+
+            function eat(food){<br>
+                console.log('我現在要吃'+food);<br>
+            }<br>
+            if(hungry <= 3){<br>
+                eat('披薩');<br>
+            }else if(hungry <= 5 && hungry > 3){<br>
+                eat('沙拉');<br>
+            }else if(hungry == 6){<br>
+                eat('餅乾');<br>
+            }else {<br>
+                console.log('我超飽我不想吃東西');<br>
+            }
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《switch - 程式碼教學》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var light = 'blue';<br><br>
+
+            function lightFun(str){<br>
+                console.log('目前是'+str+'警戒');<br>
+            }<br><br>
+
+            switch(light){<br>
+                case 'red':<br>
+                alert('紅色警戒');<br>
+                break;<br><br>
+
+                case 'blue':<br>
+                lightFun(light);<br>
+                break;<br><br>
+
+                default:<br>
+                alert('沒有任何資料');<br>
+                break;<br>
+            }
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+        <img src="img/week4/008.png"><br>
+        <img src="img/week4/009.png"><br>
+        <img src="img/week4/010.png"><br>
+        <img src="img/week4/011.png"><br>
+        <img src="img/week4/012.png"><br>
+        <img src="img/week4/013.png"><br>
+        
+        <script src="js/week4.js"></script>
+    </body>
+</html>
