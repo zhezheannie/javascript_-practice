@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test">《for 寫法》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            //初始狀態;條件;更新內容
+            for(var i=0;i<3;i++){<br>
+                console.log(i)<br>
+            }<br><br>
+
+            for(var i=0;i<10;i++){<br>
+                console.log(i*i)<br>
+            }<br><br>
+
+            for(var i=1;i<10;i++){<br>
+                console.log(i+'*'+i+'='+i*i)<br>
+            }<br>
+            // "0*0=0"<br>
+            // "1*1=1"<br>
+            // "2*2=4"<br>
+        </p>
+        <img src="img/week5/01.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for-array 寫法》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var farms = [<br>
+                {<br>
+                    farmer:'卡斯伯',<br>
+                    field: 6,<br>
+                },<br>
+                {<br>
+                    farmer:'查理',<br>
+                    field: 10,<br>
+                }<br>
+            ]<br><br>
+
+            var farmsTotal = farms.length;<br>
+            for(var i=0;i<farmsTotal;i++){<br>
+                console.log('第'+(i+1)+'個農場主人是'+ farms[i].farmer)<br>
+                // 第一個農場主人是卡斯伯<br>
+            }
+        </p>
+        <img src="img/week5/02.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for-if 寫法》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var farms = [<br>
+                {<br>
+                    farmer:'卡斯伯',<br>
+                    field: 6,<br>
+                    chick: 200,<br>
+                },<br>
+                {<br>
+                    farmer:'查理',<br>
+                    field: 10,<br>
+                    chick: 50,<br>
+                },<br>
+                {<br>
+                    farmer:'約翰',<br>
+                    field: 8,<br>
+                    chick: 120,<br>
+                }<br>
+            ]<br><br>
+
+            var farmsTotal = farms.length;<br><br>
+
+            // 撈出哪些的農場的小雞數量超過100隻以上<br><br>
+            for(var i=0;i<farmsTotal;i++){<br>
+                if(farms[i].chick>100){<br>
+                    console.log(farms[i].farmer+'的小雞超過100隻以上');<br>
+                }<br>
+            }
+        </p>
+        <img src="img/week5/03.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for- i++ 寫法》</p>
+        <img src="img/week5/04.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for- 加總》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var farms = [<br>
+            {<br>
+                farmer:'卡斯伯',<br>
+                field: 6,<br>
+                chick: 200,<br>
+                banana: 5000,<br>
+            },<br>
+            {<br>
+                farmer:'查理',<br>
+                field: 10,<br>
+                chick: 50,<br>
+                banana: 1000,<br>
+            },<br>
+            {<br>
+                farmer:'約翰',<br>
+                field: 8,<br>
+                chick: 120,<br>
+                banana: 3215,<br>
+            }<br>
+        ]<br><br>
+
+        var farmsTotal = farms.length;<br>
+        var bananaTotal = 0;<br><br>
+
+        for(var i=0;i<farmsTotal;i++){<br>
+            bananaTotal+= farms[i].banana;<br>
+        }<br><br>
+        
+        console.log('今年村子的香蕉採收量'+bananaTotal); // 今年的香蕉採收總數
+        </p>
+        <img src="img/week5/05.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for與break運用》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var farms = [<br>
+            {<br>
+                farmer:'卡斯伯',<br>
+                field: 6,<br>
+                chick: 200,<br>
+                banana: 5000,<br>
+            },<br>
+            {<br>
+                farmer:'查理',<br>
+                field: 10,<br>
+                chick: 50,<br>
+                banana: 1000,<br>
+            },<br>
+            {<br>
+                farmer:'約翰',<br>
+                field: 8,<br>
+                chick: 120,<br>
+                banana: 3215,<br>
+            }<br>
+        ]<br><br>
+
+        var farmsTotal = farms.length;<br><br>
+
+        for(var i=0;i<farmsTotal;i++){<br>
+            console.log('第'+(i+1)+'個農場主人是'+ farms[i].farmer); // 第一個農場主人是卡斯伯<br>
+            bananaTotal+= farms[i].banana;<br>
+            if(farms[i].chick>50){<br>
+                console.log(farms[i].farmer+'的小雞剛好夠');<br>
+                farms[i].chick-= 50;<br>
+                console.log(farms[i].farmer+'的小雞剩下'+farms[i].chick);<br>
+                break;<br>
+            }<br>
+        }
+        </p>
+        <img src="img/week5/06.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for - opendata 範例 (上)》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            var myData = {"contentType":"application/json; charset=utf-8","isImage":false,"data":[{"area":"新興區","village":"明莊里","car_licence":"342-XY","trips_name":"1","area_name":"日間配套","caption":"中山一路與六合路口(六合夜市)","today_s":"07:00","today_e":"07:15","estime_s":"07:00","estime_e":"07:15"},{"area":"新興區","village":"建華里","car_licence":"342-XY","trips_name":"1","area_name":"日間配套","caption":"七賢二路與同愛街口","today_s":"07:20","today_e":"07:30","estime_s":"07:20","estime_e":"07:30"},{"area":"新興區","village":"東坡里","car_licence":"342-XY","trips_name":"1","area_name":"日間配套","caption":"中正三路與南華路口(南華市場)","today_s":"07:35","today_e":"07:55","estime_s":"07:35","estime_e":"07:55"},{"area":"新興區","village":"成功里","car_licence":"342-XY","trips_name":"1","area_name":"日間配套","caption":"七賢一路與忠孝一路口","today_s":"08:40","today_e":"09:00","estime_s":"08:40","estime_e":"09:00"},{"area":"新興區","village":"浩然里","car_licence":"KEB-7050","trips_name":"1","area_name":"日間配套","caption":"仁愛二街與文化路口","today_s":"09:15","today_e":"09:35","estime_s":"09:15","estime_e":"09:35"},{"area":"新興區","village":"開平里","car_licence":"KEB-7050","trips_name":"1","area_name":"日間配套","caption":"八德一路與開封路口","today_s":"09:45","today_e":"10:05","estime_s":"09:45","estime_e":"10:05"},{"area":"前金區","village":"文東里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"新田路與仁義街口","today_s":"08:40","today_e":"08:47","estime_s":"08:40","estime_e":"08:47"},{"area":"前金區","village":"新生里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"市中一路與成功一路519巷口","today_s":"07:15","today_e":"07:21","estime_s":"07:15","estime_e":"07:21"},{"area":"前金區","village":"新生里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"市中一路與旺盛街口","today_s":"08:05","today_e":"08:10","estime_s":"08:05","estime_e":"08:10"},{"area":"前金區","village":"東金里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"自強一路與旺盛街口","today_s":"07:55","today_e":"08:02","estime_s":"07:55","estime_e":"08:02"},{"area":"前金區","village":"社東里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"成功一路與長生街口","today_s":"08:18","today_e":"08:23","estime_s":"08:18","estime_e":"08:23"},{"area":"前金區","village":"長城里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"瑞源路與南台橫路口","today_s":"07:27","today_e":"07:33","estime_s":"07:27","estime_e":"07:33"},{"area":"前金區","village":"長生里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"自強二路與光復一街口","today_s":"08:25","today_e":"08:31","estime_s":"08:25","estime_e":"08:31"},{"area":"前金區","village":"長興里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"瑞源路與育才街口","today_s":"07:36","today_e":"07:42","estime_s":"07:36","estime_e":"07:42"},{"area":"前金區","village":"青山里","car_licence":"KEH-5767","trips_name":"1","area_name":"日間配套","caption":"大同一路266號前","today_s":"07:45","today_e":"07:51","estime_s":"07:45","estime_e":"07:51"}],"id":"3aca8b1b-3488-4921-863c-df13987bf98a","success":true}<br>
+            // console.log(myData.data[0].area);<br><br>
+
+            var total = myData.data.length;<br>
+            for(i=0;i<total;i++){<br>
+                if(myData.data[i].area=='新興區'){<br>
+                    console.log(myData.data[i].village);<br>
+                }<br>
+            }
+        </p>
+        <img src="img/week5/07.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+        
+        <p style="color: red; font-weight: bold; font-size: 20px;">《for - opendata 範例 (下)》</p>
+        <p style="font-size: 14px; color: #aaa;">
+            // 查詢10分鐘內哪個地區有下雨<br><br>
+
+            var rainTotal = rainData.length;<br>
+            for (var i = 0; i < rainTotal; i++) {<br>
+                if(rainData[i].Rainfall10min > 0){<br>
+                    var County = rainData[i].County;<br>
+                    var Township = rainData[i].Township;<br>
+                    var rain = rainData[i].Rainfall10min;<br>
+                    console.log(County+Township+'：'+rain);<br>
+                }<br> 
+            }
+        </p>
+        <img src="img/week5/08.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <script src="js/week5.js"></script>
+    </body>
+</html>
