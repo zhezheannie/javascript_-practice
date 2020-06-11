@@ -17,3 +17,6 @@
 
 ## [第四週練習](https://zhezheannie.github.io/javascript_practice/week4.html) 控制判斷(運算子、if、switch)
 ![](img/week4.png)
+
+## [第五週練習](https://zhezheannie.github.io/javascript_practice/week5.html) 迴圈
+![](img/week5.png)
