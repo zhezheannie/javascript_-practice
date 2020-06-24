@@ -20,3 +20,6 @@
 
 ## [第五週練習](https://zhezheannie.github.io/javascript_practice/week5.html) 迴圈
 ![](img/week5.png)
+
+## [第六週練習](https://zhezheannie.github.io/javascript_practice/week6.html) 迴圈
+![](img/week6.png)
