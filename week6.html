@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #strId{
+                color: blue;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test">《querySelector - 選擇單一元素》</p>
+        <p class="title">這裡是span外面 <span>abc</span></p>
+        <p class="title">這裡是span外面 <span>abc</span></p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var el = document.querySelector('.title span');<br>
+            el.textContent = '123';<br>
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test">《querySelectorAll - 可重複選取多個元素》</p>
+        <p class="title2">這裡是span外面 <span>ggg</span></p>
+        <p class="title2">這裡是span外面 <span>ggg</span></p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var aa = document.querySelectorAll('.title2 span');
+            aa[0].textContent = '666';<br>
+            aa[1].textContent = '777';<br>
+
+            var aaLen= aa.length;<br>
+
+            for(var i = 0; i < aaLen; i++){<br>
+                aa[i].textContent = i+'888';<br>
+            }
+        </p>
+        <hr style="width: 600px; display: inline-block;">
+        
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test">《setAttribute - 增加標籤屬性》</p>
+            <h1 class="title3">
+                <a herf="#">title</a>
+            </h1>
+            <p class="str">hello</p>
+
+        <p style="font-size: 14px; color: #aaa;">
+            var bb = document.querySelector('.title3 a');<br>
+            bb.setAttribute('href','http://www.google.com');<br><br>
+
+            var cc = document.querySelector('.str');<br>
+            cc.setAttribute('id','strId')<br><br>
+
+            var dd = document.querySelector('.title3 a').getAttribute('href');<br>
+            console.log(dd);
+        </p>
+        <img src="img/week6/01.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test">《innerHTML 寫法 (上)》</p>
+        <p id="main"></p>
+        <p id="main2"></p>
+        <img src="img/week6/02.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test">《innerHTML 寫法 (下)》</p>
+        <ul class="list"></ul>
+        <img src="img/week6/03.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <script src="js/week6.js"></script>
+    </body>
+</html>
