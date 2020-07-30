@@ -23,3 +23,6 @@
 
 ## [第六週練習](https://zhezheannie.github.io/javascript_practice/week6.html) DOM
 ![](img/week6.png)
+
+## [第七、八週練習](https://zhezheannie.github.io/javascript_practice/week7.html) event
+![](img/week7.png)
