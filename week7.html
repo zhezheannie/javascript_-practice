@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #strId{
+                color: blue;
+                font-size: 50px;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                background: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test1">《event 物件 - 告知你當下元素資訊》</p>
+        <input type="button" value="點擊" class="btn"><br><br>
+        <img src="img/week7/01.png"><br>
+        <img src="img/week7/02.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test2">《觀念篇 - 各種事件綁定的差異》</p>
+        <input onclick="alert('直接在html寫')" type="button" value="點擊" class="aaa"><br><br>
+        <img src="img/week7/03.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test3">《addEventListener - 事件監聽》</p>
+        <input type="button" value="點擊" class="bbb"><br><br>
+        <img src="img/week7/04.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test4">《綁定事件的語法差異》</p>
+        <input type="button" value="on點擊" class="btnOn"><br><br>
+        <input type="button" value="add點擊" class="btnAdd"><br><br>
+        <img src="img/week7/05.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test4">《Event Bubbling、Event Capturing 差異》</p>
+        <ul>
+            <li><a href="">1234</a></li>
+            <li><a href="">1234</a></li>
+        </ul>
+        <div class="box"></div><br>
+        <img src="img/week7/06.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test5">《stopPropagation - 中止冒泡事件》</p>
+        <img src="img/week7/07.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <p style="color: red; font-weight: bold; font-size: 20px;" id="test6">《preventDefault - 取消預設觸發行為》</p>
+        <a class="link" href="http://www.google.com">menu icon</a><br><br>
+        <img src="img/week7/08.png"><br>
+        <hr style="width: 600px; display: inline-block;">
+
+        <script src="js/week7.js"></script>
+    </body>
+</html>
